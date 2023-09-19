@@ -1,0 +1,1 @@
+web: gunicorn travels_backend.wsgi

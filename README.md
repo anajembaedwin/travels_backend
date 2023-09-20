@@ -10,7 +10,6 @@ This is the backend for a Travel and Tours business built using Django. It provi
 - User authentication and authorization.
 - Integration with Paystack API for payments.
 - User and Admin dashboards.
-- ...
 
 ## Setup
 
@@ -88,24 +87,90 @@ This is the backend for a Travel and Tours business built using Django. It provi
 
 ```
 travels_backend/
-├── accounts/
-│   ├── ...
-├── accommodations/
-│   ├── ...
-├── activities/
-│   ├── ...
 ├── bookings/
-│   ├── ...
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations/
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
 ├── destinations/
-│   ├── ...
-├── media/
-├── static/
-├── templates/
-├── db.sqlite3
-├── manage.py
-├── Procfile
-├── requirements.txt
-└── runtime.txt
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations/
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── accommodations/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations/
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── tours/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations/
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── activities/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations/
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── users/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations/
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── notifications/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations/
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── analytics/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations/
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── reviews/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations/
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── content_management/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations/
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── payments/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations/
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── travels_backend/
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+└── manage.py
 ```
 
 ## Contributing

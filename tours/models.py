@@ -7,7 +7,8 @@ def validate_start_end_dates(start_date, end_date):
         raise ValidationError("End date must be after start date")
 
 class Tour(models.Model):
-    name = models.CharField(max_length=100)
+    customer_name = models.CharField(max_length=100)
+    destination = models.CharField(max_length=100)
     description = models.TextField()
     start_date = models.DateField()
     end_date = models.DateField()
@@ -17,15 +18,15 @@ class Tour(models.Model):
         super(Tour, self).save(*args, **kwargs)
 
     def __str__(self):
-        return self.name
+        return self.customer_name
 
 class Destination(models.Model):
-    name = models.CharField(max_length=100)
-    location = models.CharField(max_length=100)
+    customer_name = models.CharField(max_length=100)
+    destination = models.CharField(max_length=100)
     tour = models.ForeignKey(Tour, related_name='destinations', on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name
+        return self.customer_name
 
 class Booking(models.Model):
     tour = models.ForeignKey(Tour, related_name='bookings', on_delete=models.CASCADE)
